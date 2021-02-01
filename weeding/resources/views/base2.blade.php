@@ -72,7 +72,7 @@
             
             
             <div class="carousel-item">
-                <img src="{{ asset('assets/img/header1.jpg')}}" alt="wedding3" class="cart-icon">
+                <img src="{{ asset('assets/img/smile.jpg')}}" alt="wedding3" class="cart-icon">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1></h1>

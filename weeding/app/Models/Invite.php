@@ -45,6 +45,17 @@ class Invite extends Model
         
         return $result;
     }
+    /**
+    *show list with alien of  married
+    */
+
+    public function showInvitedWithlien($lien)
+    {  
+       
+        $result=Invite::whereLien($lien)
+        ->get(['nom','prenom','email','contact','pays','passWedding']);
+        return $result;
+    }
 
 
     

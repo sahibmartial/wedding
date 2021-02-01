@@ -30,3 +30,7 @@ Route::get("contact_Maya","App\Http\Controllers\ContactController@contact")->nam
 Route::post("contact_Maya_save","App\Http\Controllers\ContactController@postcontact")->name('contact_Maya_save');
 
 Route::get("quinoussommes","App\Http\Controllers\InviteController@quinoussommes")->name("quinoussommes");
+
+Route::get("getlistinvitesbylien","App\Http\Controllers\InviteController@getlistinvites")->name("getlistinvitesbylien");
+
+Route::post("showlistinvitesbylien","App\Http\Controllers\InviteController@createPDF")->name("showlistinvitesbylien");

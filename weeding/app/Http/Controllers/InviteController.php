@@ -7,6 +7,7 @@ use Monarobase\CountryList\CountryListFacade;
 use App\Models\Invite;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Classe\Mail;
+use PDF;
 
 class InviteController extends Controller
 {
@@ -190,6 +191,40 @@ class InviteController extends Controller
       public function quinoussommes()
     {
          return view('invites.quinoussommes');
+    }
+
+    // Generate PDF
+    public function createPDF(Request $request) {
+      // retreive all records from db
+         $invite= new Invite();
+      $data = $invite->showInvitedWithlien($request->lien);
+
+     // dd($data);
+
+      // share data to view
+       if($data->count() >0)
+       {
+        view()->share('invites.pdf',$data);
+      $pdf = PDF::loadView('invites.pdf',['data'=>$data,'lien'=>$request->lien]);
+
+      $name=$request->lien."13-mars-2021";
+      // download PDF file with download method
+      return $pdf->download($name.'.pdf');
+
+       }
+       
+       return back()->with('success','impossible de generer un pdf pour '.$request->lien);
+
+      
+    }
+    /**
+    *cette fonction nous permet d'obtenir la lis des invites en fonction du lien 
+    *
+    */
+
+    public function getlistinvites()
+    {
+        return view('invites.getlistinvites');
     }
 
 

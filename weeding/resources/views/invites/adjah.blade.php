@@ -50,7 +50,7 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            
+            Pour recevoir une invitation
             <a href="{{route('getinvite')}}"><img src="{{ asset('assets/img/invitation.png')}}" alt="wedding" class="cart-icon"></a>
         </div>
     </nav>
@@ -66,7 +66,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('assets/img/header3.jpg')}}" alt="wedding1" class="cart-icon">
+                <img src="{{ asset('assets/img/alixM.jpg')}}" alt="wedding1" class="cart-icon">
                 
                 <div class="container">
                     <div class="carousel-caption text-left">
@@ -115,8 +115,12 @@
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+        </a>    
+         
     </div>
+    
+    <center> <p><a href="#bottom"> Decouvrir le duo parfait</a></p></center>
+         <span id="bottom"></span>
 
 
     <!-- Marketing messaging and featurettes
@@ -127,7 +131,8 @@
 
         <!-- Here content  -->
         @yield('content')
-
+           
+         
 
         <!-- START THE FEATURETTES -->
 
@@ -136,7 +141,7 @@
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading">Alix. <span class="text-muted">Mon CALK royal. </span></h2>
-                <p class="lead">Femme battante dynamique, devouée et de qualité.<br>
+                <p class="lead">Femme battante, dynamique, devouée et de qualité...<br>
                     Celui qui trouve une femme trouve le bonheur;c'est une grâce qu'il obtient de l'Eternel.<small>Proverbes 18:22</small> <br></p>
             </div>
             <div class="col-md-5">
@@ -150,7 +155,9 @@
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
                 <h2 class="featurette-heading">Martial. <span class="text-muted">Mon CHAMPION.</span></h2>
-                <p class="lead">Son palais n'est que douceur, Et toute sa personne est pleine de charme.<br>
+                <p class="lead">
+                Homme de foi, exceptionnel, courageux et attentionné..<br>
+                 Son palais n'est que douceur, Et toute sa personne est pleine de charme.<br>
                  Tel est mon bien-aimé, tel est mon ami.....<small>Cantiques 5:16</small> </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -164,7 +171,7 @@
 
         <!-- /END THE FEATURETTES -->
 
-        <center><b>Le 13 mars 2021- wedding day</b></center> 
+        <center><b>Le 13 mars 2021 à 11h-wedding day-église assemblée de Dieu Toît rouge temple shalom/Yopougon <a href="https://goo.gl/maps/6JJKFVjtEGVZE22d6">localisation</a> </b></center> 
 
     </div><!-- /.container -->
 
